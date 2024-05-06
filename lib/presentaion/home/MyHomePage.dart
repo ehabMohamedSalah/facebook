@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:task1_work/core/utils/Strings_manager.dart';
+import 'package:task1_work/core/utils/assets_manager.dart';
 
 import '../../core/resuableComponent/states2_item.dart';
 
@@ -29,13 +31,13 @@ List<String> feeling=["Anonymous post","feeling","location","Guide","frind","Ree
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Image.asset("assets/images/flutter.png",height: 230.h,width: double.infinity,fit: BoxFit.cover,),
+              Image.asset(assetManager.Background,height: 230.h,width: double.infinity,fit: BoxFit.cover,),
               Container(
                 color: Colors.lightBlue,
                 width: double.infinity,
                 child: Padding(
                   padding:   REdgeInsets.all(8.0),
-                  child: Center(child: Text("Group by Egyptain GOOgle Flutter Community",style:  Theme.of(context).textTheme.headlineLarge,)),
+                  child: Center(child: Text(StringsManger.Group,style:  Theme.of(context).textTheme.headlineLarge,)),
                 ),
           
               ),
@@ -43,7 +45,7 @@ List<String> feeling=["Anonymous post","feeling","location","Guide","frind","Ree
                 padding:   REdgeInsets.all(8.0),
                 child: Row(children: [
                   SizedBox(width: 10.w,),
-                  Text("Flutter Egypt",style:  Theme.of(context).textTheme.headlineMedium,),
+                  Text(   StringsManger.FlutterEgypt,style:  Theme.of(context).textTheme.headlineMedium,),
                   Icon(Icons.arrow_forward_ios_rounded,size: 20.sp,),
                 ],),
               ),
@@ -51,10 +53,10 @@ List<String> feeling=["Anonymous post","feeling","location","Guide","frind","Ree
                 padding:   REdgeInsets.only(left: 8,right: 8),
                 child: Row(children: [
                   Icon(Icons.public,color: Colors.black38,),
-                  Text("public group",style: Theme.of(context).textTheme.labelSmall?.copyWith(color: Colors.black38),),
+                  Text(StringsManger.PublicGroup,style: Theme.of(context).textTheme.labelSmall?.copyWith(color: Colors.black38),),
                   SizedBox(width: 10.w,),
-                  Text("75K",style: TextStyle(fontWeight: FontWeight.bold),),
-                  Text("members",style: Theme.of(context).textTheme.labelSmall?.copyWith(color: Colors.black38),),
+                  Text(StringsManger.k75,style: TextStyle(fontWeight: FontWeight.bold),),
+                  Text(StringsManger.members,style: Theme.of(context).textTheme.labelSmall?.copyWith(color: Colors.black38),),
                 ],),
               ),
               SizedBox(
