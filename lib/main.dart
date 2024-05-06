@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:task1_work/presentaion/MyHomePage.dart';
+import 'package:task1_work/presentaion/home/MyHomePage.dart';
 
 import 'config/theme/appTheme.dart';
 
